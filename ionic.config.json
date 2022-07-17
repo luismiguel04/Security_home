@@ -1,0 +1,7 @@
+{
+  "name": "Security_Home",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
