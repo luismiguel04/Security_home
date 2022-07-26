@@ -1,3 +1,25 @@
 .rig {
     text-align: right;
 }
+
+.center {
+    text-align: center;
+}
+
+:host {
+    --gradient-color-1: #2ddcdc;
+    --gradient-color-2: #Ffffff;
+    --page-background: #2ddcdc;
+    --segment-indicator-color: #4286f4;
+}
+
+.fondo {
+    background: -webkit-linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--gradient-color-1), var(--gradient-color-2));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    ion-toolbar {
+        --background: transparent;
+    }
+}
