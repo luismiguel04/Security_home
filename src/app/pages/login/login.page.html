@@ -24,13 +24,16 @@
                     <ion-icon name="mail-outline" only-icon></ion-icon>
                   </ion-label>
                 </div>
-                <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+                <ion-input name="user" type="text" placeholder="Usuario" [(ngModel)]="name" ngModel required>
+                </ion-input>
               </ion-item>
               <ion-item>
                 <div>
                   <ion-icon name="lock-closed-outline"></ion-icon>
                 </div>
-                <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+                <ion-input name="password" type="password" placeholder="Password" [(ngModel)]="password" ngModel
+                  required>
+                </ion-input>
               </ion-item>
             </div>
           </ion-col>
@@ -40,8 +43,7 @@
             <div padding>
 
               <!--   <ion-chip color="ligth"> -->
-              <ion-button size="large" shape="round" type="submit" [disabled]="form.invalid"
-                [routerLink]="['/dashboard/']">
+              <ion-button size="large" shape="round" type="submit" [disabled]="form.invalid" (click)="Signupv()">
                 <ion-icon name="log-in-outline"></ion-icon>
                 <ion-label color="ligth">Ingresar</ion-label>
               </ion-button>
